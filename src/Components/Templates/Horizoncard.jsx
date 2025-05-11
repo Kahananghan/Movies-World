@@ -12,7 +12,8 @@ function Horizoncard({data}) {
                 <div className='text-white p-3 h-[50%] overflow-y-auto'>
                     <h1 className='mt-2 mb-2 text-lg font-semibold'>{ data.name || data.title || data.origial_name || data.original_title}</h1>
                     <p>
-                        {data.overview.slice(0,60)}...
+                        {/* {data.overview.slice(0,60)}... */}
+                        {data.overview ? `${data.overview.slice(0, 60)}...` : 'No description available.'}
                     <span className='text-zinc-400'> more</span>
                     </p>
                 </div>
